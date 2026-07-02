@@ -49,7 +49,7 @@ This project focuses on the following business questions:
 - Jupyter Notebook
 - Tableau Public
 - Git / GitHub
-- AI-assisted review agents (CodeX, Claude)
+- AI-assisted review agents 
 
 ## Project Structure
 
@@ -84,6 +84,7 @@ retail-customer-analytics/
 │
 ├── README.md
 └── requirements.txt
+```
 
 ## Analysis Workflow
 
@@ -133,7 +134,9 @@ A small group of high-value customers contributed a large share of total monetar
 Champions represented a smaller share of customers but generated the majority of monetary value.
 Cohort retention varied across months, and later cohorts had less observable time due to right-censoring.
 At-Risk High-Value Customers were selected as the target group for a reactivation experiment.
-Data Notes
+
+## Data Notes
+
 Raw data is not included in this repository.
 Product sales revenue excludes non-product transactions such as postage, manual adjustments, bank charges, Amazon fees, and bad debt adjustments.
 Customer-level analysis excludes transactions without customer IDs.
@@ -145,23 +148,29 @@ The A/B test section is an experiment design proposal, not an actual experiment 
 
 Install dependencies:
 
+```bash
 pip install -r requirements.txt
+```
 
 Run notebooks in order:
 
+```text
 01_data_cleaning.ipynb
 02_exploratory_analysis.ipynb
 03_sql_business_metrics.ipynb
 04_rfm_segmentation.ipynb
 05_cohort_analysis.ipynb
 06_ab_test_design.ipynb
+```
 
 The cleaned and processed outputs are saved under:
 
+```text
 data/processed/
+```
 
 The Tableau dashboard was created using the processed CSV outputs.
 
-Author
+## Author
 
 Xiao Zhang
