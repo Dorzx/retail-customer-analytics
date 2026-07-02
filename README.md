@@ -85,7 +85,8 @@ retail-customer-analytics/
 ├── README.md
 └── requirements.txt
 
-Analysis Workflow
+## Analysis Workflow
+
 1. Data Cleaning
 
 The raw transaction data was cleaned by standardizing column names, removing exact duplicates, handling missing descriptions, identifying cancelled invoices, separating price anomalies, and defining consistent revenue metrics.
@@ -124,7 +125,7 @@ An experiment design was proposed for the At-Risk High-Value Customers segment. 
 
 This section is a design proposal only. No real post-campaign data is available, so no causal impact is claimed.
 
-Key Findings
+## Key Findings
 Product sales revenue reached approximately $19.66M.
 The business had 39,573 product orders and 5,861 product customers.
 The United Kingdom contributed the majority of product sales revenue.
@@ -139,7 +140,8 @@ Customer-level analysis excludes transactions without customer IDs.
 RFM scores are relative to this dataset and should not be interpreted as fixed universal thresholds.
 Cohort retention is monthly repeat purchase activity, not cumulative retention.
 The A/B test section is an experiment design proposal, not an actual experiment result.
-How to Run
+
+## How to Run
 
 Install dependencies:
 
